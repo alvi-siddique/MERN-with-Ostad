@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="mbiForm">
+            <input type="text" placeholder="Enter your Height" id="heightInput"> <label>(in meter)</label> <br>
+            <input type="text" placeholder="Enter your Weight" id="weightInput"> <label>(in Kg)</label> <br>
+            <button class="resetBtn" onclick="reset()">Reset</button>
+            <button class="calculateBtn" onclick="bmiCalc()">Calculate</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+
+    <script>
+        function bmiCalc(){
+            let h = document.getElementById("heightInput").value
+            let w = document.getElementById("weightInput").value
+            
+            // document.getElementById("result").innerHTML = "Your BMI is: " +BMI.toFixed(2)
+            if (h === "" || isNaN(h)) {
+                document.getElementById("result").innerHTML = "Provide a valid Height!";
+            } else if (w === "" || isNaN(w)) {
+                document.getElementById("result").innerHTML = "Provide a valid weight!";
+             } else {
+                h = h/100
+
+                let BMI = parseFloat(w) / (parseFloat(h) * parseFloat(h))
+                BMI= BMI.toFixed(2)
+            //   Categorize result
+            if (BMI < 18.5) {
+                document.getElementById("result").innerHTML ="Your BMI is: "+BMI+ ", Underweight";
+            } else if (BMI >= 18.5 && BMI < 24.9) {
+                document.getElementById("result").innerHTML ="Your BMI is: "+BMI+", Normal";
+            } else if (BMI >= 25.0 && BMI < 29.9) {
+                document.getElementById("result").innerHTML ="Your BMI is: "+BMI+ ", Overweight";
+            } else {
+                document.getElementById("result").innerHTML ="Your BMI is: "+BMI+ ", Obesity";
+            }
+  }
+        }
+
+        function reset(){
+            document.getElementById("result").innerHTML = null
+            document.getElementById("heightInput").value = null
+            document.getElementById("weightInput").value = null
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+img {
+    vertical-align: middle;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+
+
+
+body {
+    background: url(BMI.jpg) no-repeat center/cover;
+    padding-top: 20%;
+    padding-left: 40%;
+    padding-right: 40%;
+    text-align: center;
+    
+  }
+
+
+
+label{
+    color: aliceblue;
+    display: block;
+}
+
+p{
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    background-color: transparent;
+    color: aliceblue;
+    height: 30px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+input::placeholder {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+.mbiForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button {
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255);
+    /* margin-top: 15px; */
+    margin: 15px 15px ;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+button:hover{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+
+  

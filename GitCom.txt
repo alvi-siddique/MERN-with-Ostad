@@ -1,0 +1,12 @@
+================New repisotory of Mern Assignments
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/alvi-siddique/MERN-with-Ostad.git
+git push -u origin main
+
+===================Push
+git remote add origin https://github.com/alvi-siddique/MERN-with-Ostad.git
+git branch -M main
+git push -u origin main
