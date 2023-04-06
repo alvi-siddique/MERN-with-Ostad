@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg">
+        <div class="overly">
+            <div id="clock"></div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        function updateClock() {
+        
+        const now = new Date();
+        
+        
+        let hours = now.getHours();
+        
+        const meridiem = hours >= 12 ? "PM" : "AM"
+        hours = hours % 12 || 12
+        
+        hours = hours.toString().padStart(2, "0")
+        
+        let minutes = now.getMinutes().toString().padStart(2, '0');
+        let seconds = now.getSeconds().toString().padStart(2, '0');
+        
+        let time = `${hours} H<br>${minutes} M<br>${seconds} S<br>  ${meridiem}`;
+
+        document.getElementById('clock').innerHTML = time;
+      }
+
+      updateClock();
+
+      setInterval(updateClock, 1000);
+
+    </script>
+
+
+  </body>
+
+  </html>

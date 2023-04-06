@@ -1,0 +1,10 @@
+Live link: https://stellar-valkyrie-64e474.netlify.app/
+
+brief description:
+1. First created a function called updateClock and a object 'now' of Date function.
+2. then set the hour using getHours, then change the 12 hour format using ternary operator and modulus
+3. then convert the hour in string and use padstart function to get output like 01,02... etc
+4. then set the minute and second using get functions(getMinutes,getSeconds) and also convert to string and padstart
+5. call the updateClock function and  set the setInterval function to update every second
+
+ 
