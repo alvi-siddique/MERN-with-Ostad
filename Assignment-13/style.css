@@ -5,6 +5,9 @@
     background-color: #000000;
     color: #f8f9fa;
   }
+.dark-mode #item1, #item2, #item3 {
+  color: rgb(50, 53, 53);
+}
   
   /* Navbar styles */
   .navbar {
