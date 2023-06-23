@@ -6,6 +6,18 @@ function toggleMode() {
 
 const modeToggleBtn = document.getElementById("mode-toggle");
 modeToggleBtn.addEventListener("click", toggleMode);
+modeToggleBtn.addEventListener('click', () => {
+  if(modeToggleBtn.innerHTML == 'Dark Mode'){
+    modeToggleBtn.innerHTML = 'Light Mode';
+    modeToggleBtn.style.background = "silver";
+    modeToggleBtn.style.color = "black"
+  }
+  else{
+    modeToggleBtn.innerHTML = 'Dark Mode';
+    modeToggleBtn.style.background = 'black';
+    modeToggleBtn.style.color = 'white'
+  }
+})
 
 // Interactive Visualization
 function createBarChart() {
