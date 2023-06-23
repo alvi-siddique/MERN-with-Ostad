@@ -1,4 +1,4 @@
-##Project name: Uses of Bootstrap Components
+# Uses of Bootstrap Components
 
 This project demonstrates various use cases and examples of Bootstrap components. It provides a collection of interactive web pages showcasing different Bootstrap components such as buttons, forms, modals, navigation bars, and more.
 
