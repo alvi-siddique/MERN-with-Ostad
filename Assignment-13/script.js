@@ -16,8 +16,8 @@ function createBarChart() {
     labels: ["Team A", "Team B", "Team C", "Team D", "Team E", "Team F"],
     datasets: [
       {
-        label: "League",
-        data: [12, 19, 3, 10, 5, 8],
+        label: "Wins",
+        data: [13, 8, 7, 6, 9, 11],
         backgroundColor: [
           "rgba(255, 99, 132, 0.5)",
           "rgba(54, 162, 235, 0.5)",
