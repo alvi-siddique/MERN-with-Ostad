@@ -3,12 +3,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #fbf9fd;
-	border-radius: 8px;
-	border-left: 3px solid #736ced;
+	background-color: #f8f0ff;
+	border-left: 3px solid #30d9ce;
+	border-bottom: 3px solid #30d9ce;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 .cardDiv h5 {
-	width: 69%;
+	width: 60%;
 	margin: 0 24px;
 }
 .cardDiv .checkBox {
@@ -17,7 +22,7 @@
 }
 .deletebtn {
 	min-width: 120px;
-	background-color: #e74d42;
+	background-color: #d72e22;
 }
 .editbtn,
 .deletebtn {
@@ -28,14 +33,14 @@
 	color: white;
 }
 .deletebtn:hover {
-	background-color: #cc3d32;
+	background-color: #e31405;
 }
 .editbtn {
 	min-width: 100px;
-	background-color: rgb(83, 81, 209);
+	background-color: rgb(131, 131, 131);
 }
 .editbtn:hover {
-	background-color: rgb(64, 62, 185);
+	background-color: rgb(123, 123, 123);
 }
 .editIcon,
 .deleteIcon {
